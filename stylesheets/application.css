@@ -15,15 +15,19 @@
  *
  */
 
-body {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; color:#222;}
+body {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; color:#333;}
 
 h1, h2, h3, h4 {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;}
 h1 {font-size: 22px;}
-h2, .wiki h1 {font-size: 18px; color: #222;}
-h3, .wiki h2 {font-size: 14px; color: #222;}
-h4, .wiki h3 {font-size: 13px; color: #222;}
+h2, .wiki h1 {font-size: 18px; color: #333;}
+h3, .wiki h2 {font-size: 14px; color: #333;}
+h4, .wiki h3 {font-size: 13px; color: #333;}
 
 #main-menu li a.selected, #main-menu li a.selected:hover {color:#333;}
+
+#main-menu li {margin: 0px !important;}
+
+#header { min-height: 4.3em !important;}
 
 #sidebar h3{color: #484848;}
 
@@ -137,7 +141,7 @@ div.wiki img {
 
 /***** My page layout *****/
 .mypage-box {
-  color:#222;
+  color:#333;
 }
 
 /***** attachments *****/

@@ -2,43 +2,58 @@
 
 body {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; color:#555;}
 
-h1, h2, h3, h4 {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;}
-h1 {font-size: 22px;}
+h1, h2, h3, h4 {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; font-weight: 300;}
+h1 {font-size: 22px; color: #555;}
 h2, .wiki h1 {font-size: 18px; color: #555;}
 h3, .wiki h2 {font-size: 14px; color: #555;}
 h4, .wiki h3 {font-size: 13px; color: #555;}
 
-#top-menu  li a {font-weight: normal;}
+#top-menu {
+  background-color: #94c2ff;
+  background-color: #f8faff;
+  border-bottom: solid 1px #dadffe;
+}
+#top-menu  li a {color: #555; font-weight: 300;}
+
+#main {background-color: #f8faff}
 
 #main-menu {bottom: -1px;}
 #main-menu li {margin: 0px;}
 
 #main-menu li a,
 #main-menu li a:hover {
-  color: #EEE;
+  color: #9d9d9d;
+  font-weight: 300;
   padding: 2px 10px;
   border-radius: 0.2em 0.2em 0em 0em;
 }
 
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
-  border-top: solid 1px #DDD;
-  border-left: solid 1px #DDD;
-  border-right: solid 1px #DDD;
+  border-top: solid 1px #dadffe;
+  border-left: solid 1px #dadffe;
+  border-right: solid 1px #dadffe;
   color: #555;
+  font-weight: 300;
 }
 
 #header {
   min-height: 4.3em;
   vertical-align: middle;
-  background-color: #507AAA;
-  border-bottom: solid 1px #DDD;
+  background-color: #e7f1fc;
+  border-bottom: solid 1px #dadffe;
   padding: 7px 10px 10px 15px;
 }
 
 #quick-search {padding: 7px 10px 10px 10px;}
 
-#sidebar h3{color: #666;}
+#sidebar h3 {color: #666;}
+
+#footer {border-top: solid 1px #dadffe;}
+
+hr {opacity: 0.4;}
+
+.box {border: solid 1px #dadffe;}
 
 /***** Links *****/
 a, a:link, a:visited {color: #3475a7;}
@@ -48,6 +63,9 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited {color: #666;}
 a#toggle-completed-versions {color:#666;}
 
 /***** Tables *****/
+
+table.attributes th {padding: 2px;}
+
 table.list th {padding: 4px 2px; text-align: center !important;}
 
 tr.changeset td.author {text-align: center; width: 15%;}
@@ -55,7 +73,8 @@ tr.changeset td.committed_on {text-align: center; width: 15%;}
 
 tr.version.closed, tr.version.closed a {color: #666;}
 
-td.parent {white-space: normal; text-align: left;}
+tr.child {opacity: 0.9;}
+tr.child td.subject {padding-left: 0.5em;}
 
 /* assinged to me, created by me */
 tr.assigned-to-me td.assigned_to, tr.created-by-me td.author {font-weight: bold; font-size: 11px;}
@@ -103,6 +122,7 @@ tr.odd.priority-lowest td, tr.even.priority-lowest td {border-color: #add7f3;}
 input[type="text"] {font-family: "Osaka-Mono", "MS Gothic", sans-serif; font-size: 100%;}
 textarea.wiki-edit {font-family: "Osaka-Mono", "MS Gothic", sans-serif; letter-spacing: normal; line-height: 130%;}
 
+div.issue {border: solid 1px #EED;}
 div.issue div.subject p {color: #666;}
 div.issue .next-prev-links {color:#666;}
 

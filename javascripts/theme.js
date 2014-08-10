@@ -12,14 +12,14 @@ $(function(){
     /* 検索におけるスコープを検索ボックスのプレースホルダーに表示 */
     $("body").attr("class").match(/controller-[\S]+/);
     var controllerName = RegExp.lastMatch;
-    var placeholderText = "Redmine内を検索"
+    var placeholderText = " Redmine内を検索"
     var placeholderStrings = [
-      {controller: "controller-issues", text: "チケットを検索"},
-      {controller: "controller-news", text: "ニュースを検索"},
-      {controller: "controller-documents", text: "文書を検索"},
-      {controller: "controller-changesets", text: "更新履歴を検索"},
-      {controller: "controller-wiki_pages", text: "Wikiページを検索"},
-      {controller: "controller-messages", text: "メッセージを検索"}
+      {controller: "controller-issues", text: " チケットを検索"},
+      {controller: "controller-news", text: " ニュースを検索"},
+      {controller: "controller-documents", text: " 文書を検索"},
+      {controller: "controller-changesets", text: " 更新履歴を検索"},
+      {controller: "controller-wiki_pages", text: " Wikiページを検索"},
+      {controller: "controller-messages", text: " メッセージを検索"}
     ];
     jQuery.each(placeholderStrings, function() {
       if (controllerName === this.controller) {

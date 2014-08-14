@@ -103,6 +103,10 @@ tr.odd.priority-lowest td, tr.even.priority-lowest td {border-color: #add7f3;}
 input[type="text"] {font-family: "Osaka-Mono", "MS Gothic", sans-serif; font-size: 100%;}
 textarea.wiki-edit {font-family: "Osaka-Mono", "MS Gothic", sans-serif; letter-spacing: normal; line-height: 130%;}
 
+div.issue {
+  border: solid 1px #eec;
+  box-shadow: 2px 3px 3px -4px #777;
+}
 div.issue div.subject p {color: #666;}
 div.issue .next-prev-links {color:#666;}
 

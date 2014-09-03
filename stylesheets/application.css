@@ -3,14 +3,14 @@
 body {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; color:#555;}
 
 h1, h2, h3, h4 {font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;}
-h1 {font-size: 22px;}
+h1 {font-size: 22px; text-shadow: 1px 1px 3px rgba(0,0,0,0.15);}
 h2, .wiki h1 {font-size: 18px; color: #555;}
 h3, .wiki h2 {font-size: 14px; color: #555;}
 h4, .wiki h3 {font-size: 13px; color: #555;}
 
 #top-menu  li a {font-weight: normal;}
 
-#main-menu {bottom: -1px;}
+#main-menu {bottom: -3px;}
 #main-menu li {margin: 0px;}
 
 #main-menu li a,
@@ -22,9 +22,7 @@ h4, .wiki h3 {font-size: 13px; color: #555;}
 
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
-  border-top: solid 1px #DDD;
-  border-left: solid 1px #DDD;
-  border-right: solid 1px #DDD;
+  padding: 2px 12px;
   color: #555;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
@@ -33,7 +31,7 @@ h4, .wiki h3 {font-size: 13px; color: #555;}
   min-height: 4.3em;
   vertical-align: middle;
   background-color: #507AAA;
-  border-bottom: solid 1px #DDD;
+  border-bottom: solid 3px #EEE;
   padding: 7px 10px 10px 15px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
 }
@@ -47,7 +45,7 @@ h4, .wiki h3 {font-size: 13px; color: #555;}
   padding-left: 0.3em;
 }
 
-#sidebar h3{color: #666;}
+#content {box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.075);}
 
 #footer {background-color: #3E5B76; color: #EEE}
 #footer a {color: #FFF;}
@@ -118,8 +116,8 @@ input[type="text"], select {font-family: "Osaka-Mono", "MS Gothic", sans-serif; 
 textarea.wiki-edit {font-family: "Osaka-Mono", "MS Gothic", sans-serif; letter-spacing: normal; line-height: 130%;}
 
 div.issue {
-  border: solid 1px #eec;
-  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.3);
+  border: none;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
 }
 div.issue div.subject p {color: #666;}
 div.issue .next-prev-links {color:#666;}
